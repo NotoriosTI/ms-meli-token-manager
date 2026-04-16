@@ -17,7 +17,7 @@ packages = [{ include = "meli_token_manager", from = "src" }]
 dependencies = [
   "requests>=2.31.0",
   "google-cloud-secret-manager",
-  "env-manager @ git+https://github.com/NotoriosTI/libraries.git@main#subdirectory=env-manager"
+  "notoriosti-env-manager>=0.2.3,<1.0.0"
 ]
 
 [project.optional-dependencies]
