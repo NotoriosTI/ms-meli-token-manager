@@ -49,10 +49,11 @@ se toca este archivo. Sin ese sí, lo que hay es una tarea que cree ser una doct
 qué. Nunca planes ni pendientes — un plan se pudre y después miente; una decisión con fecha no
 promete nada, así que envejece sin mentir.
 
-**No hay más archivos de doctrina que estos.** `README.md` es la verdad; `CLAUDE.md`,
-`CODEX.md` y `AGENTS.md` son punteros de una línea. No escribas doctrina en ellos, ni en
-`.agents/`, ni en un documento nuevo al lado. Dos copias garantizan que una envejezca y que un
-agente lea lo que el otro ya corrigió.
+**No hay más archivos de doctrina que estos.** `README.md` es la verdad; `CLAUDE.md` y
+`CODEX.md` son punteros de una línea. **`AGENTS.md` no existe**: se borró del árbol entero el
+2026-08-09 y no se vuelve a crear — ni a mano, ni desde una herramienta. No escribas doctrina
+en los punteros, ni en `.agents/`, ni en un documento nuevo al lado. Dos copias garantizan que
+una envejezca y que un agente lea lo que el otro ya corrigió.
 
 **Contexto de dónde estás parado:** Odoo son los datos duros. **Notorios360** es la capa
 heurística — los módulos que saben cómo se hace cada cosa; este repo es uno de ellos.
@@ -161,7 +162,7 @@ que describe §5 del README global: un semáforo que sólo sabe ponerse verde.
   propósito** y que no hay que consolidar.
 - **Despacha NO depende de esto, y no es un duplicado.** Despacha refresca sus propios tokens
   de MeLi desde `channel_credentials` en su propia DB (`mercadoLibreTokenRefreshWorker`).
-  Verificado el 2026-08-02 y anotado en el `AGENTS.md` de Despacha con una advertencia
+  Verificado el 2026-08-02 y anotado en el `README.md` de Despacha con una advertencia
   explícita: son **dos caminos independientes; no apagar uno creyendo que es duplicado del
   otro**. Los contenedores históricos `meli-token-rotator*` sí se apagaron; este
   `meli-token-rotate.service` es otra cosa y sigue vivo a propósito.
